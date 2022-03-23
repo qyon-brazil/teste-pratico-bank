@@ -1,43 +1,38 @@
-## Questionario:
-
-1 - para que serve o ORM?
-
-2 - Qual a função do composer?
-
-3 - Sabendo que mvc representa model, view e controller, o que cada um faz.
-
-4 - Sabe-se que postgresql, mysql e sqlserver, sqlserver são database, qual linguagem eles utilizam.
-
-5 - Como voce faz para se manter atualizado referente as novas tecnoclogias.
-
-6 - Quantos objetos você pode criar em PHP?
-
-7 - Explique '_construct ()' e '_destruct ()'?
-
-8 - Qual é a diferença entre '==' e '==='?
-
-9 - Quando você usa '@' no php?
-
-10 - Como você descobre o tamanho de um array?
-
-
 ## Tarefa pratica e logica:
 
-1 - Fazer um fork do projeto, para o seu github, criar uma branche nova para iniciar o teste pratico.
+- Fazer um fork do projeto, para o seu github, criar uma branche nova com seu nome para iniciar o teste pratico
 
-2 - Fixar alguns erros que existe dentro da api.
+## Backend 
 
-3 - Criar um arquivo index.php na raiz do xamp(ou algum outro server) e Consumir a api, utilizando a biblioteca guzzlephp 
-	Documentação: http://docs.guzzlephp.org/en/7.0/quickstart.html
+- Corrija alguns erros que existem dentro da api e a deixe funcional
+- Crie uma tabela de movimentações financeiras e seu crud (Index,show,update,store e delete) correspondente gerenciando as informações pertinentes a um histórico de movimentações que se relaione com a tabela banks
+- Crie uma rota que receba o número da conta e retorne suas respectivas movimentações, ordenadas por data descrescente 
+- Crie um mecanismo de autenticação com as ferramentas necessárias e exija um token válido no header para o acesso as demais rotas do sistema (opcional)
 
-4 - Criar uma conta com o seu nome, fazer 5 depositos de 500 reais, fazer uma retirada de 1500.
-	ps. Não apagar as requisições para consumir, Comente elas e faça uma nova requisição.
 
-5 - adicione mais 3 contas com nomes aleatorios, contendo valores distintos.
+# Extra / Opcionais
 
-6 - no index.php comente todas as requisições ja feitas, e em seguida faça uma ultima requisição para listar todas as contas e 
-utilizando um algoritimo de organização feita por voce, coloque as 6 contas na ordem total do maior para o menor.
+- Principios de código limpo (S.O.L.I.D)
+- Desacoplamento
+- Arquitetura em camadas (ou Hexagonal)
+- Testes unitários.
+- Ambiente docker
+- Crie uma documentação para o projeto no readme 
 
-ps. por exemplo o bubble sort, não precisa ser ele.
+## Front-end
+- Listar contas e seus respectivos saldos e, em uma segunda tela o extrato bancário de um banco selecionado na tela anterior 
+- Os dados devem preferencialmente ser consumidos da API da etapa anterior, mas, caso ela não tenha sido concluída pode-se utilizar um array
+- Exibir dados do extrato em ordem cronológica;
+- Organizar o código de forma que as responsabilidades fiquem separadas;
 
-7 - Comite e nos envie o link do seu repo com o projeto.
+# Extra / Opcionais
+
+- Material UI
+- Styled-Components
+- Hooks (useEffect, useContext, useCallback, useState)
+- Clean code
+
+
+## Envio do Desafio
+
+O repositório deve ser privado e o convite de acesso e informações relevantes devem ser enviados para os emails [**guilherme.andreoti@qyon.com**] e [**gustavo.santarosa@qyon.com**] com o assunto **Desafio Qyon**
